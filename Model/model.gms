@@ -634,7 +634,7 @@ Parameters
 *  pmuv0(t)            "Export price index of manufactured goods from high-income countries"
 *  pwsav0(t)           "Global price of investment good"
 *  pwgdp0(t)           "Global gdp deflator"
-*  pnum0(t)            "Model numéraire"
+*  pnum0(t)            "Model numï¿½raire"
 *  pw0(a)              "World price of activity a"
 *  walras0             "Value of Walras"
 *
@@ -957,7 +957,7 @@ variables
    pmuv(t)                 "Export price index of manufactured goods from high-income countries"
    pwsav(t)                "Global price of investment good"
    pwgdp(t)                "Global gdp deflator"
-   pnum(t)                 "Model numéraire"
+   pnum(t)                 "Model numï¿½raire"
    pw(a,t)                 "World price of activity a"
    walras(t)               "Value of Walras"
 
@@ -1309,7 +1309,7 @@ equations
    pwfacteq(t)             "Global factor price index"
    pwgdpeq(t)              "World GDP deflator"
    pwsaveq(t)              "Global price of investment good"
-   pnumeq(t)               "Model numéraire"
+   pnumeq(t)               "Model numï¿½raire"
    pweq(a,t)               "World price of activity a"
 
    walraseq(t)             "Walras' Law"

@@ -1,0 +1,175 @@
+=0PATH             24.7.4 r58773 Released Sep 19, 2016 WEI x86 64bit/MS Windows 
+=1
+17444 row/cols, 88957 non-zeros, 0.03% dense.
+
+=2
+convergence_tolerance 1e-006
+major_iteration_limit 500
+minor_iteration_limit 10000
+crash_iteration_limit 50
+cumulative_iteration_limit 10000
+time_limit 100
+interrupt_limit 5
+chen_lambda 0.8
+output yes
+output_errors yes
+output_warnings no
+output_major_iterations yes
+output_major_iterations_frequency 1
+output_minor_iterations yes
+output_minor_iterations_frequency 500
+output_crash_iterations yes
+output_crash_iterations_frequency 1
+output_initial_point no
+output_initial_statistics no
+output_initial_point_statistics yes
+output_initial_scaling_statistics yes
+output_final_point no
+output_final_statistics yes
+output_final_point_statistics yes
+output_final_scaling_statistics no
+output_final_degeneracy_statistics no
+output_final_summary yes
+output_maximum_zero_log 10
+output_maximum_zero_listing 1000
+output_restart_log yes
+output_options no
+presolve yes
+output_presolve_level 1
+gradient_step_limit 5
+gradient_searchtype arc
+crash_method pnewton
+crash_perturb yes
+crash_searchtype line
+crash_minimum_dimension 1
+crash_nbchange_limit 1
+nms yes
+nms_memory_size 10
+nms_mstep_frequency 10
+nms_initial_reference_factor 20
+nms_searchtype line
+nms_maximum_watchdogs 5
+proximal_perturbation 0
+merit_function fischer
+crash_merit_function fischer
+lemke_start automatic
+lemke_start_type slack
+lemke_rank_deficiency_iterations 10
+output_linear_model no
+=1
+Path 4.7.04 (Mon Sep 19 11:18:59 2016)
+Written by Todd Munson, Steven Dirkse, and Michael Ferris
+=2
+MCP modified basis.
+  ** WARNING **
+Basis modifications: 12117
+
+INITIAL STATISTICS
+Inf-Norm of Complementarity . .  5.0000e-001 eqn: (pnumeq(shock))
+Inf-Norm of Normal Map. . . . .  5.0000e-001 eqn: (pnumeq(shock))
+Inf-Norm of Minimum Map . . . .  5.0000e-001 eqn: (pnumeq(shock))
+Inf-Norm of Fischer Function. .  5.0000e-001 eqn: (pnumeq(shock))
+Inf-Norm of Grad Fischer Fcn. .  5.0000e-001 eqn: (pwgdpeq(shock))
+Two-Norm of Grad Fischer Fcn. .  5.0000e-001
+=1
+
+INITIAL POINT STATISTICS
+=2
+=1
+Maximum of X. . . . . . . . . .  1.0790e+000 var: (kstocke(SouthAsia,shock))
+=2
+=1
+Maximum of F. . . . . . . . . .  5.0000e-001 eqn: (pnumeq(shock))
+=2
+=1
+Maximum of Grad F . . . . . . .  1.7505e+002 eqn: (ygoveq(NAmerica,dtax,shock))
+                                            var: (kappah(NAmerica,shock))
+=2
+=1
+
+INITIAL JACOBIAN NORM STATISTICS
+=2
+=1
+Maximum Row Norm. . . . . . . .  2.7490e+002 eqn: (ygoveq(NAmerica,dtax,shock))
+=2
+=1
+Minimum Row Norm. . . . . . . .  1.6986e-001 eqn: (rorgeq(shock))
+=2
+=1
+Maximum Column Norm . . . . . .  3.1639e+002 var: (ptmg(TransComm-c,shock))
+=2
+=1
+Minimum Column Norm . . . . . .  3.3185e-002 var: (rore(Oceania,shock))
+=2
+
+Crash Log
+major  func  diff  size  residual    step       prox   (label)
+    0     0             5.0000e-001             0.0e+000 (pnumeq(shock))
+    1     1     0 12117 2.0318e-007  1.0e+000    0.0e+000 (ygoveq(SSA,dtax,shock))
+pn_search terminated: no basis change.
+
+Major Iteration Log
+major minor  func  grad  residual    step  type prox    inorm  (label)
+    0     0     2     2 2.0318e-007           I 0.0e+000 8.9e-008 (ygoveq(SSA,dtax)
+=1
+
+FINAL STATISTICS
+=2
+=1
+Inf-Norm of Complementarity . .  8.9381e-008 eqn: (ygoveq(SSA,dtax,shock))
+=2
+=1
+Inf-Norm of Normal Map. . . . .  8.9381e-008 eqn: (ygoveq(SSA,dtax,shock))
+=2
+=1
+Inf-Norm of Minimum Map . . . .  8.9381e-008 eqn: (ygoveq(SSA,dtax,shock))
+=2
+=1
+Inf-Norm of Fischer Function. .  8.9381e-008 eqn: (ygoveq(SSA,dtax,shock))
+=2
+=1
+Inf-Norm of Grad Fischer Fcn. .  1.2725e-005 eqn: (rsgeq(NAmerica,shock))
+=2
+=1
+Two-Norm of Grad Fischer Fcn. .  1.3382e-005
+=2
+=1
+
+FINAL POINT STATISTICS
+=2
+=1
+Maximum of X. . . . . . . . . .  1.5000e+000 var: (odaIn(Oceania,shock))
+=2
+=1
+Maximum of F. . . . . . . . . .  8.9381e-008 eqn: (ygoveq(SSA,dtax,shock))
+=2
+=1
+Maximum of Grad F . . . . . . .  2.6257e+002 eqn: (ygoveq(NAmerica,dtax,shock))
+                                            var: (kappah(NAmerica,shock))
+=2
+
+FINAL JACOBIAN NORM STATISTICS
+Maximum Row Norm. . . . . . . .  3.7906e+002 eqn: (ygoveq(NAmerica,dtax,shock))
+Minimum Row Norm. . . . . . . .  1.2237e-001 eqn: (pcnnrgeq(RestofWorld,MeatLstk)
+Maximum Column Norm . . . . . .  2.6384e+002 var: (kappah(NAmerica,shock))
+Minimum Column Norm . . . . . .  3.3185e-002 var: (rore(Oceania,shock))
+
+FINAL DEGENERACY STATISTICS
+Total Degenerates . . . . . . .  0
+
+ ** EXIT - solution found.
+
+Major Iterations. . . . 0
+Minor Iterations. . . . 0
+Restarts. . . . . . . . 0
+Crash Iterations. . . . 1
+Gradient Steps. . . . . 0
+Function Evaluations. . 2
+Gradient Evaluations. . 2
+Basis Time. . . . . . . 0.047000
+Total Time. . . . . . . 0.218000
+Residual. . . . . . . . 2.031791e-007
+MCP modified basis.
+=1
+
+=2
